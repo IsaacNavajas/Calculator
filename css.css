@@ -175,12 +175,23 @@ button:active{
         top:0;
         left:0;
         background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ff0000, #fb0094, #0000ff, #00ff00, #ff0000);
-        background-size:200%;
+        background-size:300%;
         width: calc(100% );
         height: calc(100% );
         z-index:0;
         animation:animate 20s linear infinite;
         filter: blur(8px);
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0 0;;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
     }
         
     .box{
